@@ -2,7 +2,7 @@
 [![Gem Version](https://badge.fury.io/rb/decouple.png)](http://badge.fury.io/rb/decouple)
 [![Build Status](http://travis-ci.org/einzige/decouple.png?branch=master)](https://travis-ci.org/einzige/decouple)
 
-Decouples long methods in a pretty weird unnatural way. Please use _PRIVATE_ methods instead, extract classes, objects, do whatever is possible not to use it. That's a really bad idea, NEVER use it. I DO ALWAYS USE NATURAL LANGUAGE CONSTRUCTIONS.
+Decouples long ruby methods (sounds strange, right?) in a pretty weird unnatural way. Please use _PRIVATE_ methods instead, extract classes, objects, do whatever is possible not to use it. That's a really bad idea, NEVER use it. I DO ALWAYS USE NATURAL LANGUAGE CONSTRUCTIONS.
 
 ## Anyways... :)
 
