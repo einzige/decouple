@@ -52,6 +52,8 @@ end
 
 ### Testing
 
+Never decouple tests (it is like testing private methods). All you do in your decoupled blocks - it is still the same method you decouple.
+
 ```ruby
 subject { MyClass.new }
 
