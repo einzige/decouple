@@ -1,6 +1,7 @@
 require 'decouple/decoupler'
 
 module Decouple
+  VERSION = '0.0.1'
 
   # @param base [Class]
   def self.included(base)
