@@ -19,7 +19,7 @@ class MyClass
 
   def send_letter
     # ...
-    # Another thougsand lines code
+    # Another thousand lines code
     # ...
     proceed_action :to_grandma
   end
