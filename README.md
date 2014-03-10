@@ -4,6 +4,8 @@
 
 Decouples long ruby methods (sounds strange, right?) in a pretty weird unnatural way. Please use _PRIVATE_ methods instead, extract classes, objects, do whatever is possible not to use it. That's a really bad idea, NEVER use it. I DO ALWAYS USE NATURAL LANGUAGE CONSTRUCTIONS.
 
+Exactly the same thing you can do using Observers, metaprogramming etc...
+
 ## Anyways... :)
 
 ```ruby
