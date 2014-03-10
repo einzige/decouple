@@ -50,6 +50,8 @@ MyClass.decouple do
 end
 ```
 
+It is preferred not to populate hard logic in `decouple` block, better create multiple `decouple` blocks if possible.
+
 ### Testing
 
 Never decouple tests (it is like testing private methods). All you do in your decoupled blocks - it is still the same method you decouple.
