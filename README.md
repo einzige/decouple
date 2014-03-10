@@ -48,3 +48,36 @@ MyClass.decouple do
 end
 ```
 
+### Testing
+
+```ruby
+subject { MyClass.new }
+
+# Put all your tests here, don't decouple tests!
+describe '#send_email' do
+  it 'delivers emails to grandma' do
+    expect { subject.send_email(:to_grandma) }.to deliver_emails
+  end
+end
+```
+
+Anyways... :)
+
+```ruby
+subject { MyClass.new }
+
+describe 'callbacks' do
+  # <paranoid_mode>
+  specify do
+    expect(:subject).to receive(:proceed_action).with(:something)
+    subject.send_email
+  end
+  # </paranoid_mode>
+
+  describe 'on #send_email' do
+    it 'delivers emails to grandma' do
+      expect { subject.proceed_with(:send_email, :to_grandma) }.to deliver_emails
+    end
+  end
+end
+```
