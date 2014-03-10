@@ -36,7 +36,7 @@ module Decouple
       while action.nil?
         location = caller_locations(depth+=1, 1)[0] or raise "No action to proceed (invalid context) [#{depth}]"
         location = location.label.to_sym
-        action = location if self[location]
+        action = location if self.has_key?(location)
       end
 
       run_on(klass_instance, action, *arguments)
